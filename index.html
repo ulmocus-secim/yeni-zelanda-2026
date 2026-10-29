@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yeni Zelanda Seçimi 2026</title>
+<meta name="description" content="Yeni Zelanda 7 Kasım 2026 genel seçimi: parti oyları, meclis sandalyeleri, seçim bölgesi haritası ve sonuçları, Türkçe.">
+<style>
+:root{--bg:#F2F4F7;--card:#fff;--ink:#141B26;--mut:#5B6675;--line:#DDE2EA;--und:#D5DAE1;
+ --NAT:#1F5FBF;--LAB:#D8342B;--GP:#2E9E57;--ACT:#D9A800;--NZF:#4A4A4A;--TPM:#8E1F3C;--OPP:#129C9C;--O:#8C95A3;
+ --warn:#B45309;--warnbg:#FEF3C7;--live:#0F7B3E;--livebg:#DCFCE7;--test:#6D28D9;--testbg:#EDE9FE}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E131B;--card:#161D28;--ink:#E6EBF2;--mut:#98A3B3;--line:#2A3444;--und:#2F3947;
+ --NZF:#A3A9B3;--TPM:#D04C72;--NAT:#3D7BE0;--warn:#FBBF24;--warnbg:#3A2A06;--live:#4ADE80;--livebg:#0B2E1A;--test:#C4B5FD;--testbg:#2A1F4A}}
+:root[data-theme="dark"]{--bg:#0E131B;--card:#161D28;--ink:#E6EBF2;--mut:#98A3B3;--line:#2A3444;--und:#2F3947;
+ --NZF:#A3A9B3;--TPM:#D04C72;--NAT:#3D7BE0;--warn:#FBBF24;--warnbg:#3A2A06;--live:#4ADE80;--livebg:#0B2E1A;--test:#C4B5FD;--testbg:#2A1F4A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0}h2{font-size:17px;margin:0 0 10px}h3{font-size:15px;margin:14px 0 6px}
+.top{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sub{color:var(--mut);font-size:13px}
+.big{font-size:15px;color:var(--ink);font-weight:600;text-align:right}
+.badge{display:inline-block;padding:3px 10px;border-radius:99px;font-weight:700;font-size:12px;letter-spacing:.03em;vertical-align:3px}
+.b-sim{background:var(--warnbg);color:var(--warn)}.b-live{background:var(--livebg);color:var(--live)}.b-test{background:var(--testbg);color:var(--test)}
+.banner{border-radius:10px;padding:10px 14px;margin:0 0 14px;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px;min-width:0}
+.grid2{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px}
+@media(max-width:900px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.hemi svg{width:100%;height:auto;display:block;max-width:560px;margin:0 auto}
+.hemi circle{cursor:pointer}.hemi circle:hover{stroke:var(--ink);stroke-width:1.5}
+.blocs{display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:22px;margin-top:6px}
+.blocs small{font-weight:500;font-size:12px;color:var(--mut);display:block}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--mut);margin-top:8px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.bar{height:14px;border-radius:5px;background:var(--line);overflow:hidden;position:relative}
+.bar span{display:block;height:100%}
+.bar i{position:absolute;top:-2px;bottom:-2px;border-left:2px dashed var(--mut);opacity:.7}
+.pvrow{display:grid;grid-template-columns:150px minmax(0,1fr) 62px 74px;gap:8px;align-items:center;margin:7px 0;font-size:14px}
+.pvrow .s{font-variant-numeric:tabular-nums;text-align:right}
+.pvrow .seat{font-size:12px;color:var(--mut);text-align:right}
+.pvhd{font-size:12px;color:var(--mut)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+#map svg{width:100%;height:auto;display:block;max-height:78vh}
+#map path{stroke:var(--card);stroke-width:.6;cursor:pointer}#map path:hover,#map path.sel{stroke:var(--ink);stroke-width:1.6}
+.tip{position:fixed;pointer-events:none;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;box-shadow:0 4px 16px rgba(0,0,0,.18);z-index:9;max-width:290px;display:none}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--mut);font-weight:600}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--bg)}
+.cand{display:grid;grid-template-columns:minmax(0,1fr) 70px 56px;gap:8px;align-items:center;margin:4px 0;font-size:14px}
+.cand .bar{height:8px}
+.lead{font-weight:700}
+.scroll{max-height:460px;overflow:auto}
+a{color:var(--NAT)}
+.note{font-size:12px;color:var(--mut)}
+select{font:inherit;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:100%}
+</style>
+</head>
+<body>
+<main>
+<div class="top">
+  <div><h1>Yeni Zelanda Genel Seçimi 2026 <span id="badge" class="badge"></span></h1>
+  <div class="sub" id="subt">7 Kasım 2026 · Temsilciler Meclisi (120 sandalye + varsa fazla sandalye) · 71 seçim bölgesi · <span id="upd"></span></div></div>
+  <div class="big" id="prog"></div>
+</div>
+<div id="banner" class="banner" hidden></div>
+
+<div class="grid2">
+  <div class="card hemi"><h2>Meclis sandalyeleri</h2><div id="hemi"></div>
+    <div class="blocs" id="blocs"></div><div class="legend" id="hleg"></div>
+    <div class="note" id="hnote" style="margin-top:8px"></div></div>
+  <div class="card"><h2>Parti oyu</h2>
+    <div class="pvrow pvhd"><span>Parti</span><span>Oy oranı (kesikli çizgi: %5 baraj)</span><span class="s">Oy</span><span class="seat">Bölge+Liste</span></div>
+    <div id="pv"></div><div class="note" id="pvnote"></div></div>
+</div>
+
+<div class="grid2">
+  <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h2 style="margin:0">Seçim bölgesi haritası</h2>
+    <div class="tabs" id="maptabs" style="margin:0"><button data-l="gen" class="on">Genel bölgeler (64)</button><button data-l="mao">Māori bölgeleri (7)</button></div></div>
+    <div class="tabs" id="coltabs" style="margin-top:8px"><button data-c="cand" class="on">Bölge milletvekili (aday oyu)</button><button data-c="party">En çok parti oyu</button></div>
+    <div id="map"></div><div class="note" id="mapnote"></div></div>
+  <div class="card" id="elpanel"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h2 id="elname" style="margin:0"></h2>
+    <select id="elsel" aria-label="Seçim bölgesi seç"></select></div>
+    <div class="note" id="elstat" style="margin:6px 0 4px"></div>
+    <h3>Aday oyu (bölge milletvekili)</h3><div id="elcand"></div>
+    <h3>Parti oyu (bu bölgede)</h3><div id="elparty"></div></div>
+</div>
+
+<div class="card"><h2>Yakın yarışlar</h2><div id="close"></div></div>
+<div class="card"><h2>Tüm seçim bölgeleri</h2><div class="scroll"><table id="eltable"></table></div></div>
+<div class="card note" id="foot"></div>
+</main>
+<div class="tip" id="tip"></div>
+<script>
+// Yayın sırasında build-site.js bu üç değeri doldurur.
+var BUILD = "c23b1072a9";
+var DATABASE = "https://raw.githubusercontent.com/ulmocus-secim/yeni-zelanda-2026/main/";   // örn. https://raw.githubusercontent.com/<sahip>/<depo>/main/
+var REPO = "ulmocus-secim/yeni-zelanda-2026";           // örn. ulmocus-secim/yeni-zelanda-2026
+
+var PARTY = {
+  NAT:{n:"National (Ulusal Parti)",s:"National",c:"var(--NAT)",w:"https://en.wikipedia.org/wiki/New_Zealand_National_Party"},
+  LAB:{n:"Labour (İşçi Partisi)",s:"Labour",c:"var(--LAB)",w:"https://en.wikipedia.org/wiki/New_Zealand_Labour_Party"},
+  GP:{n:"Yeşil Parti",s:"Yeşiller",c:"var(--GP)",w:"https://en.wikipedia.org/wiki/Green_Party_of_Aotearoa_New_Zealand"},
+  ACT:{n:"ACT",s:"ACT",c:"var(--ACT)",w:"https://en.wikipedia.org/wiki/ACT_New_Zealand"},
+  NZF:{n:"NZ First",s:"NZ First",c:"var(--NZF)",w:"https://en.wikipedia.org/wiki/New_Zealand_First"},
+  TPMAO:{n:"Te Pāti Māori",s:"Te Pāti Māori",c:"var(--TPM)",w:"https://en.wikipedia.org/wiki/Te_P%C4%81ti_M%C4%81ori"},
+  OPP:{n:"Opportunity",s:"Opportunity",c:"var(--OPP)",w:"https://en.wikipedia.org/wiki/The_Opportunity_Party"},
+  TOP:{n:"The Opportunity Party",s:"TOP",c:"var(--OPP)",w:"https://en.wikipedia.org/wiki/The_Opportunity_Party"},
+  IND:{n:"Bağımsız",s:"Bağımsız",c:"var(--O)",w:"https://en.wikipedia.org/wiki/Independent_politician"}
+};
+var ORDER=["GP","LAB","TPMAO","OPP","TOP","NZF","NAT","ACT"];          // yarım dairede soldan sağa
+var GOV=["NAT","ACT","NZF"], OPPO=["LAB","GP","TPMAO"];                  // 2023–2026 hükümet ortakları / muhalefet
+var PNAME={};                                                             // beslemedeki parti adları (kısaltma → ad)
+function pInfo(p){return PARTY[p]||{n:PNAME[p]||p,s:PNAME[p]||p,c:"var(--O)",w:"https://en.wikipedia.org/wiki/List_of_political_parties_in_New_Zealand"}}
+var WIKI="https://en.wikipedia.org/wiki/2026_New_Zealand_general_election";
+
+var RAW=null, DATA=null, GEO=null, layer="gen", colorBy="cand", curEl=null, lastSha=null;
+var fmt=new Intl.NumberFormat("tr-TR"), pct=function(x){return "%"+(Math.round(x*10)/10).toLocaleString("tr-TR")};
+var $=function(id){return document.getElementById(id)};
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+// ---------------- veri yükleme ----------------
+function getJSON(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})}
+function loadData(){
+  // Dalın son commit'ini sor (raw.githubusercontent dal adresleri ~5 dk önbellekli; commit adresi her zaman taze)
+  var shaP = REPO ? fetch("https://api.github.com/repos/"+REPO+"/commits/main",{headers:{Accept:"application/vnd.github.sha"},cache:"no-store"})
+      .then(function(r){return r.ok?r.text():null}).catch(function(){return null}) : Promise.resolve(null);
+  return shaP.then(function(sha){
+    if(sha && sha===lastSha && RAW) return false;
+    var b = sha&&DATABASE ? DATABASE.replace(/main\/$/,"")+sha+"/" : (DATABASE||"./");
+    var q = sha?"":"?t="+Date.now();
+    var gp = GEO?Promise.resolve(GEO):getJSON(b+"geo.json"+q).catch(function(){return null});
+    return Promise.all([getJSON(b+"data.json"+q),gp]).then(function(a){
+      if(BUILD && a[0].build && a[0].build!==BUILD){var k="nz-rl";try{if(sessionStorage.getItem(k)!==a[0].build){sessionStorage.setItem(k,a[0].build);location.reload();return false}}catch(e){}}
+      lastSha=sha; RAW=a[0]; GEO=a[1]; RAW.parties.forEach(function(p){PNAME[p[0]]=p[1]}); return true;
+    });
+  });
+}
+
+// ---------------- simülasyon (gerçek sonuç yokken) ----------------
+function hash(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+var SEED=(Math.random()*1e9)|0;
+function rnd(key){var t=(hash(key)+SEED)>>>0;t+=0x6D2B79F5;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296}
+function gauss(key){var u=rnd(key+"a")||1e-9,v=rnd(key+"b");return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+// Simülasyonun çıkış noktası: 2023 seçiminin gerçek parti oyları (Seçim Komisyonu). Opportunity = 2023'teki TOP.
+var BASE={NAT:38.1,LAB:26.9,GP:11.6,ACT:8.6,NZF:6.1,TPMAO:3.1,OPP:2.2};
+var MAORI_K={TPMAO:8,LAB:1.6,GP:1.2,NAT:.35,ACT:.3,NZF:.8};
+var SIM_LEN=300000, SIM_HOLD=30000, SIM_T0=Date.now()-SIM_LEN*.2;
+function simClock(){var t=(Date.now()-SIM_T0)%(SIM_LEN+SIM_HOLD);return Math.min(1,t/SIM_LEN)}
+function baseOf(p){return BASE[p]!=null?BASE[p]:.25}
+function simulate(){
+  var T=simClock(),nat={},tv=0,vp=0,nShift={};
+  Object.keys(BASE).forEach(function(p){nShift[p]=Math.exp(.12*gauss("n"+p))});
+  var el=RAW.el.map(function(e){
+    var key="e"+e[0],exp=40000*Math.exp(.12*gauss(key+"x")),delay=rnd(key+"d")*.35,speed=.45+rnd(key+"s")*.35;
+    var prog=Math.max(0,Math.min(1,(T-delay)/speed)),vpPct=Math.round(prog*1000)/10,votes=Math.round(exp*prog);
+    var w={},ws=0,ps=Object.keys(BASE).concat(RAW.parties.map(function(p){return p[0]}).filter(function(p){return BASE[p]==null}));
+    ps.forEach(function(p){var k=baseOf(p)*(nShift[p]||1)*Math.exp(.25*gauss(key+p))*(e[2]?(MAORI_K[p]||1):1);if(e[2]&&p==="OPP")k*=.4;if(!e[2]&&p==="TPMAO")k*=.5;w[p]=k;ws+=k});
+    var pv={};ps.forEach(function(p){var v=Math.round(votes*w[p]/ws);if(v){pv[p]=v;nat[p]=(nat[p]||0)+v}});
+    var cw=e[5].map(function(c,i){var b=baseOf(c[1])*(nShift[c[1]]||1)*(e[2]?(MAORI_K[c[1]]||1):1);return Math.pow(b/100,1.5)*Math.exp(.5*gauss(key+"c"+i))+.002}),cs=cw.reduce(function(a,b){return a+b},0);
+    var cand=e[5].map(function(c,i){return[c[0],c[1],Math.round(votes*.985*cw[i]/cs)]}).sort(function(a,b){return b[2]-a[2]});
+    tv+=votes;vp+=vpPct;
+    return[e[0],e[1],e[2],vpPct,votes,cand,pv];
+  });
+  var wins={};el.forEach(function(e){if(e[4]&&e[5][0][2]>0)wins[e[5][0][1]]=(wins[e[5][0][1]]||0)+1});
+  var seats=allocate(nat,wins),parties=RAW.parties.map(function(p){var v=nat[p[0]]||0,s=seats[p[0]]||{l:0,e:0};
+    return[p[0],p[1],v,tv?Math.round(v/tv*10000)/100:0,s.l,s.e,s.l+s.e]}).sort(function(a,b){return b[2]-a[2]});
+  DATA={mode:"pre",simT:T,nat:{vpPct:Math.round(vp/el.length*10)/10,votes:tv,turnout:0},parties:parties,el:el};
+}
+// Sainte-Laguë: %5 barajını geçen ya da bölge kazanan partiler 120 sandalyeyi paylaşır; bölge kazancı payı aşarsa fazla sandalye (overhang) oluşur.
+function allocate(pv,wins){
+  var tot=0;Object.keys(pv).forEach(function(p){tot+=pv[p]});var out={};if(!tot)return out;
+  var el=Object.keys(pv).filter(function(p){return p!=="IND"&&(pv[p]/tot>=.05||wins[p])}),n=120-(wins.IND||0),q=[];
+  el.forEach(function(p){for(var d=0;d<n;d++)q.push([pv[p]/(2*d+1),p])});q.sort(function(a,b){return b[0]-a[0]});
+  var a={};q.slice(0,n).forEach(function(x){a[x[1]]=(a[x[1]]||0)+1});
+  Object.keys(wins).forEach(function(p){out[p]={e:wins[p],l:0}});
+  el.forEach(function(p){var e=wins[p]||0;out[p]={e:e,l:Math.max(0,(a[p]||0)-e)}});
+  return out;
+}
+
+// ---------------- yarım daire meclis ----------------
+function hemicycle(el,n,groups){
+  var rows=n>110?7:6,W=360,H=196,cx=180,cy=186,R=170,r0=R*.36,pts=[],tot=0,radii=[],i,j;
+  for(i=0;i<rows;i++){radii.push(r0+(R-r0)*i/(rows-1));tot+=radii[i]}
+  var per=radii.map(function(r){return Math.round(n*r/tot)}),diff=n-per.reduce(function(a,b){return a+b},0);per[rows-1]+=diff;
+  var dot=Math.min((R-r0)/(rows-1)*.42,Math.PI*radii[rows-1]/per[rows-1]*.45);
+  for(i=0;i<rows;i++)for(j=0;j<per[i];j++){var a=Math.PI-(per[i]===1?Math.PI/2:Math.PI*j/(per[i]-1));pts.push({a:a,x:cx+radii[i]*Math.cos(a),y:cy-radii[i]*Math.sin(a)})}
+  pts.sort(function(p,q){return q.a-p.a});
+  var svg='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Sandalye dağılımı">',k=0;
+  groups.forEach(function(g,gi){for(var m=0;m<g.k&&k<pts.length;m++,k++){var p=pts[k];
+    svg+='<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+dot.toFixed(2)+'" fill="'+(g.p?pInfo(g.p).c:"var(--und)")+'" data-g="'+gi+'"/>'}});
+  svg+='<line x1="'+cx+'" y1="'+(cy-R-6)+'" x2="'+cx+'" y2="'+(cy-r0+8)+'" stroke="var(--mut)" stroke-dasharray="3 3"/></svg>';
+  el.innerHTML=svg;
+  el.querySelectorAll("circle").forEach(function(c){var g=groups[+c.getAttribute("data-g")];
+    c.addEventListener("mousemove",function(e){tipShow(e,'<b>'+esc(g.p?pInfo(g.p).n:"Henüz dağıtılmadı")+'</b><br>'+esc(g.label))});
+    c.addEventListener("mouseleave",tipHide);
+    c.addEventListener("click",function(){window.open(g.p?pInfo(g.p).w:WIKI,"_blank","noopener")})});
+}
+function renderHemi(){
+  var ps=DATA.parties.filter(function(p){return p[6]>0}),total=0;ps.forEach(function(p){total+=p[6]});
+  var n=Math.max(120,total),maj=Math.floor(n/2)+1,seat={};ps.forEach(function(p){seat[p[0]]=p});
+  // soldan sağa: muhalefet, diğerleri, (dağıtılmamış), hükümet ortakları
+  var left=ORDER.filter(function(p){return seat[p]&&GOV.indexOf(p)<0}),right=ORDER.filter(function(p){return seat[p]&&GOV.indexOf(p)>=0});
+  var rest=ps.map(function(p){return p[0]}).filter(function(p){return ORDER.indexOf(p)<0}),order=left.concat(rest,right);
+  var groups=order.map(function(p){var s=seat[p];return{p:p,k:s[6],label:s[6]+" sandalye ("+s[5]+" bölge + "+s[4]+" liste)"}});
+  groups.splice(left.length+rest.length,0,{p:null,k:n-total,label:(n-total)+" sandalye henüz dağıtılmadı"});
+  hemicycle($("hemi"),n,groups);
+  var g=0,o=0;GOV.forEach(function(p){if(seat[p])g+=seat[p][6]});OPPO.forEach(function(p){if(seat[p])o+=seat[p][6]});
+  $("blocs").innerHTML='<span style="color:var(--LAB)">'+o+'<small>Labour + Yeşiller + Te Pāti Māori</small></span><span style="text-align:center">'+maj+'<small>çoğunluk için</small></span><span style="color:var(--NAT);text-align:right">'+g+'<small>National + ACT + NZ First</small></span>';
+  $("hleg").innerHTML=order.map(function(p){return'<span><span class="sw" style="background:'+pInfo(p).c+'"></span>'+esc(pInfo(p).s)+' '+seat[p][6]+'</span>'}).join("");
+  $("hnote").textContent=(DATA.mode==="pre"?"Simüle sandalyeler bu sayfada Sainte-Laguë yöntemiyle hesaplanır. ":"Sandalyeler Seçim Komisyonu'nun kendi hesabıdır (ön sonuç). ")+
+    "Sağ blok 2023–2026 hükümet ortakları, sol blok mevcut muhalefettir; yeni hükümet seçim sonrası pazarlıklarla kurulur."+(total>120?" "+(total-120)+" fazla sandalye (overhang) var.":"");
+}
+
+// ---------------- parti oyu ----------------
+function renderPV(){
+  var ps=DATA.parties.filter(function(p){return p[2]>0||PARTY[p[0]]}),main=ps.filter(function(p){return PARTY[p[0]]||p[3]>=1}).slice(0,10),oth=0,othN=0;
+  ps.forEach(function(p){if(main.indexOf(p)<0){oth+=p[3];othN++}});
+  var mx=Math.max(10,main.reduce(function(a,p){return Math.max(a,p[3])},0)*1.1);
+  $("pv").innerHTML=main.map(function(p){var i=pInfo(p[0]);
+    return'<div class="pvrow"><a href="'+i.w+'" target="_blank" rel="noopener" style="color:inherit">'+esc(i.s)+'</a><div class="bar"><span style="width:'+(p[3]/mx*100)+'%;background:'+i.c+'"></span><i style="left:'+(5/mx*100)+'%"></i></div>'+
+      '<span class="s">'+pct(p[3])+'</span><span class="seat">'+(p[6]?p[5]+"+"+p[4]+" = <b style=\"color:var(--ink)\">"+p[6]+"</b>":"–")+'</span></div>'}).join("")+
+    (othN?'<div class="pvrow"><span>Diğer '+othN+' parti</span><div class="bar"><span style="width:'+(oth/mx*100)+'%;background:var(--O)"></span><i style="left:'+(5/mx*100)+'%"></i></div><span class="s">'+pct(oth)+'</span><span class="seat">–</span></div>':"");
+  $("pvnote").textContent=DATA.nat.votes?"Sayılan parti oyu: "+fmt.format(DATA.nat.votes)+". Meclise girmek için %5 parti oyu ya da en az bir seçim bölgesi kazanmak gerekir.":"Henüz oy sayılmadı.";
+}
+
+// ---------------- harita ve seçim bölgeleri ----------------
+function elByName(n){for(var i=0;i<DATA.el.length;i++)if(DATA.el[i][1]===n)return DATA.el[i];return null}
+function partyLead(e){var ks=Object.keys(e[6]).sort(function(a,b){return e[6][b]-e[6][a]}),t=0;ks.forEach(function(k){t+=e[6][k]});if(!t)return null;return{p:ks[0],m:(e[6][ks[0]]-(e[6][ks[1]]||0))/t}}
+function candLead(e){var c=e[5];if(!c.length||!c[0][2])return null;var t=0;c.forEach(function(x){t+=x[2]});return{p:c[0][1],m:(c[0][2]-(c[1]?c[1][2]:0))/t,c:c[0]}}
+function elColor(e){var l=e&&(colorBy==="party"?partyLead(e):candLead(e));if(!l)return["var(--und)",1];return[pInfo(l.p).c,Math.min(1,.35+l.m*2.5)]}
+function elTip(e){if(!e)return"";var h='<b>'+esc(e[1])+'</b>'+(e[2]?' (Māori bölgesi)':'')+'<br><span class="note">Sayılan sandık: %'+e[3]+'</span><br>';
+  if(!e[4])return h+"Henüz oy sayılmadı.";
+  var t=0;e[5].forEach(function(x){t+=x[2]});
+  return h+e[5].slice(0,3).map(function(x){return'<span style="color:'+pInfo(x[1]).c+'">●</span> '+esc(x[0])+' ('+esc(pInfo(x[1]).s)+') '+pct(x[2]/t*100)}).join("<br>");}
+function renderMap(){
+  if(!GEO){$("map").innerHTML='<div class="note">Harita yüklenemedi; bölgeler listeden seçilebilir.</div>';return}
+  var L=(GEO[RAW.year]||GEO["2026"])[layer],s='<svg viewBox="0 0 '+GEO.w+' '+GEO.h+'" role="img" aria-label="Seçim bölgesi haritası">';
+  L.forEach(function(x,i){var e=elByName(x[0]),c=elColor(e);s+='<path d="'+x[1]+'" fill="'+c[0]+'" fill-opacity="'+c[1].toFixed(2)+'" data-i="'+i+'"'+(curEl===x[0]?' class="sel"':'')+'/>'});
+  $("map").innerHTML=s+'</svg>';
+  $("map").querySelectorAll("path").forEach(function(p){var nm=L[+p.getAttribute("data-i")][0];
+    p.addEventListener("mousemove",function(ev){tipShow(ev,elTip(elByName(nm)))});p.addEventListener("mouseleave",tipHide);
+    p.addEventListener("click",function(){openEl(nm)})});
+  $("mapnote").textContent=(colorBy==="cand"?"Renk: bölgede önde olan aday":"Renk: bölgede en çok parti oyu alan parti")+"; koyuluk farkı gösterir. Gri: henüz oy yok. "+
+    (layer==="mao"?"Māori bölgeleri genel bölgelerle aynı coğrafyayı kaplar; Māori seçmen kütüğündeki seçmenler bunlarda oy verir.":"Chatham Adaları haritada gösterilmez.");
+}
+function openEl(n){curEl=n;$("elsel").value=n;renderEl();renderMap();if(innerWidth<900)$("elpanel").scrollIntoView({behavior:"smooth",block:"start"})}
+function renderEl(){
+  var e=elByName(curEl);if(!e)return;
+  $("elname").textContent=e[1]+(e[2]?" (Māori)":"");
+  var t=0;e[5].forEach(function(x){t+=x[2]});
+  $("elstat").textContent="Sayılan sandık: %"+e[3]+" · aday oyu: "+fmt.format(t)+(DATA.mode==="live"&&e[3]>=100?" · tüm sandıklar sayıldı; özel oylar (special votes) sonucu değiştirebilir":"");
+  $("elcand").innerHTML=e[5].map(function(x,i){var s=t?x[2]/t*100:0,inf=pInfo(x[1]);
+    return'<div class="cand"><div><span class="'+(i===0&&t?"lead":"")+'">'+esc(x[0])+(i===0&&t&&DATA.mode==="test"?' ✓':'')+'</span> <span class="note">'+esc(inf.s)+'</span><div class="bar"><span style="width:'+s+'%;background:'+inf.c+'"></span></div></div><span class="s" style="text-align:right">'+fmt.format(x[2])+'</span><span style="text-align:right">'+(t?pct(s):"")+'</span></div>'}).join("");
+  var ks=Object.keys(e[6]).sort(function(a,b){return e[6][b]-e[6][a]}),pt=0;ks.forEach(function(k){pt+=e[6][k]});
+  $("elparty").innerHTML=pt?ks.slice(0,7).map(function(k){var s=e[6][k]/pt*100,inf=pInfo(k);
+    return'<div class="cand"><div>'+esc(inf.s)+'<div class="bar"><span style="width:'+s+'%;background:'+inf.c+'"></span></div></div><span style="text-align:right">'+fmt.format(e[6][k])+'</span><span style="text-align:right">'+pct(s)+'</span></div>'}).join(""):'<div class="note">Henüz oy sayılmadı.</div>';
+}
+function renderTables(){
+  var rows=DATA.el.map(function(e){var t=0;e[5].forEach(function(x){t+=x[2]});return{e:e,t:t,m:t?(e[5][0][2]-(e[5][1]?e[5][1][2]:0))/t:1}});
+  var cl=rows.filter(function(r){return r.t>0}).sort(function(a,b){return a.m-b.m}).slice(0,10);
+  $("close").innerHTML=cl.length?'<table><tr><th>Bölge</th><th>Önde</th><th>İkinci</th><th class="n">Fark</th><th class="n">Sandık</th></tr>'+cl.map(function(r){var e=r.e;
+    return'<tr class="click" data-n="'+esc(e[1])+'"><td>'+esc(e[1])+'</td><td style="color:'+pInfo(e[5][0][1]).c+'">'+esc(e[5][0][0])+'</td><td style="color:'+pInfo(e[5][1][1]).c+'">'+esc(e[5][1][0])+'</td><td class="n">'+fmt.format(e[5][0][2]-e[5][1][2])+' oy</td><td class="n">%'+e[3]+'</td></tr>'}).join("")+'</table>':'<div class="note">Henüz oy sayılan bölge yok.</div>';
+  var all=rows.slice().sort(function(a,b){return a.e[1].localeCompare(b.e[1],"tr")});
+  $("eltable").innerHTML='<tr><th>Bölge</th><th>Önde olan aday</th><th>Parti</th><th class="n">Oy</th><th class="n">Fark</th><th class="n">Sandık</th></tr>'+all.map(function(r){var e=r.e,c=e[5][0];
+    return'<tr class="click" data-n="'+esc(e[1])+'"><td>'+esc(e[1])+(e[2]?' <span class="note">Māori</span>':'')+'</td><td>'+(r.t?esc(c[0]):'–')+'</td><td style="color:'+(r.t?pInfo(c[1]).c:"inherit")+'">'+(r.t?esc(pInfo(c[1]).s):'')+'</td><td class="n">'+(r.t?pct(c[2]/r.t*100):'')+'</td><td class="n">'+(r.t?pct(r.m*100):'')+'</td><td class="n">%'+e[3]+'</td></tr>'}).join("");
+  document.querySelectorAll("tr.click").forEach(function(t){t.onclick=function(){openEl(t.getAttribute("data-n"));$("elpanel").scrollIntoView({behavior:"smooth",block:"start"})}});
+}
+
+// ---------------- genel ----------------
+var tip=$("tip");
+function tipShow(e,h){tip.innerHTML=h;tip.style.display="block";var x=e.clientX+14,y=e.clientY+14;if(x+300>innerWidth)x=e.clientX-300;if(y+tip.offsetHeight>innerHeight)y=e.clientY-tip.offsetHeight-10;tip.style.left=Math.max(4,x)+"px";tip.style.top=Math.max(4,y)+"px"}
+function tipHide(){tip.style.display="none"}
+function trTime(iso){try{return new Date(iso).toLocaleString("tr-TR",{timeZone:"Europe/Istanbul",day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"})+" (TSİ)"}catch(e){return iso}}
+function renderHeader(){
+  var m=RAW.mode,b=$("badge"),bn=$("banner");
+  if(m==="pre"){b.className="badge b-sim";b.textContent="SİMÜLASYON";bn.hidden=false;bn.style.background="var(--warnbg)";bn.style.color="var(--warn)";
+    bn.innerHTML="⚠ SİMÜLASYON, gerçek sonuç değil. Rakamlar uydurmadır; sayfanın nasıl çalışacağını göstermek için tarayıcıda rastgele üretilir (çıkış noktası 2023 sonuçları; aday listeleri ve seçim bölgeleri: Seçim Komisyonu). Gerçek sonuçlar sandıklar kapanınca (7 Kasım 09:00 TSİ) kendiliğinden gelir. Simülasyon saati: %"+Math.round(DATA.simT*100);}
+  else if(m==="test"){b.className="badge b-test";b.textContent="TEST · 2023 VERİSİ";bn.hidden=false;bn.style.background="var(--testbg)";bn.style.color="var(--test)";
+    bn.textContent="TEST: bu ekran 2023 seçiminin kesin sonuçlarıyla altyapı denemesidir; 2026 sonucu değildir.";}
+  else{b.className="badge b-live";b.textContent="GERÇEK VERİ · ÖN SONUÇ";bn.hidden=true;}
+  $("subt").firstChild.textContent=(m==="test"?"14 Ekim 2023 · 72 seçim bölgesi · ":"7 Kasım 2026 · Temsilciler Meclisi (120 sandalye + varsa fazla sandalye) · 71 seçim bölgesi · ");
+  $("upd").textContent=(m==="pre"?"Aday listesi alındı: ":"Son veri değişikliği: ")+trTime(RAW.fetchedAt);
+  $("prog").innerHTML=(m==="pre"?"Simüle ":"")+"sayılan sandık: %"+DATA.nat.vpPct+(DATA.nat.turnout?'<div class="sub">Katılım (sayılan oy / kayıtlı seçmen): %'+DATA.nat.turnout+'</div>':'');
+  $("foot").innerHTML="<b>Kaynak:</b> "+esc(RAW.source)+". Seçim gecesi rakamları ön sonuçtur (preliminary); özel oylar (special votes) sonradan eklenir, kesin sonuç yaklaşık üç hafta sonra açıklanır. "+
+   "“Sayılan sandık” sonucu gelen oy verme yerlerinin oranıdır, oy oranı değildir. Seçim bölgesi sınırları: Stats NZ (CC BY 4.0). Parti bağlantıları: Vikipedi. "+
+   "Ulmocus Seçim bağımsız bir sayfadır; resmî sonuçlar için <a href='https://www.electionresults.govt.nz/' target='_blank' rel='noopener'>electionresults.govt.nz</a>.";
+}
+function renderAll(){if(!RAW)return;if(RAW.mode==="pre")simulate();else DATA=RAW;
+  if(!curEl||!elByName(curEl))curEl=DATA.el[0][1];
+  if($("elsel").options.length!==DATA.el.length)$("elsel").innerHTML=DATA.el.map(function(e){return e[1]}).sort(function(a,b){return a.localeCompare(b,"tr")}).map(function(n){return'<option>'+esc(n)+'</option>'}).join("");
+  $("elsel").value=curEl;renderHeader();renderHemi();renderPV();renderMap();renderEl();renderTables()}
+$("elsel").onchange=function(){openEl(this.value)};
+function tabs(id,attr,set){$(id).querySelectorAll("button").forEach(function(b){b.onclick=function(){set(b.getAttribute(attr));$(id).querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x===b)});renderMap()}})}
+tabs("maptabs","data-l",function(v){layer=v});tabs("coltabs","data-c",function(v){colorBy=v});
+function refresh(){loadData().then(function(ch){if(ch)renderAll()}).catch(function(e){$("upd").textContent="Veri alınamadı, yeniden denenecek ("+e.message+")"})}
+refresh();
+setInterval(refresh,90000);
+setInterval(function(){if(RAW&&RAW.mode==="pre")renderAll()},4000);
+</script>
+</body>
+</html>
